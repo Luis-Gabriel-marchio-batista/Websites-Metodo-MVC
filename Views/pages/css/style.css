@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+/**HEADER**/
+
+header{
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+    border-bottom: 1px solid #444444;
+}
+
+header .logo{
+    float: left;
+    border: 2px solid #3f51b5;
+    padding: 10px;
+}
+
+header .logo a{
+    color: #3f51b5;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop li{
+    display: inline-block;
+    padding: 22px 10px;
+}
+
+nav.desktop li a{
+    color: #3f51b5;
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav.mobile{
+    float: right;
+    display: none;
+}
+
+nav.mobile .icon{
+    font-size: 25px;
+    color: #333;
+    padding: 20px 0;
+    cursor: pointer;
+    color:#3f51b5;
+}
+
+nav.mobile ul{
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 100%;
+    height: 170px;
+    background-color: #3f51b5;
+    z-index: 998;
+}
+
+nav.mobile li{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 1px solid white;
+    display: block;
+    cursor: pointer;
+}
+
+nav.mobile li a{
+    color: white;
+    text-decoration: none;
+}
+
+/**HEADER FIM**/
+
+/**HOME**/
+
+section.bg-home{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/bg-home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #444;
+}
+
+section.bg-home .box-home{
+    width: 600px;
+    height: 310px;
+    background-color: rgb(238, 238, 238);
+    text-align: justify;
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    transform: translate(-95%,-80%);
+    -webkit-transform: translate(-95%,-85%);
+    -moz-transform: translate(-95%,-80%);
+    -ms-transform: translate(-95%,-80%);
+    -o-transform: translate(-95%,-80%);
+    padding: 60px 0;
+}
+
+.box-home h2{
+    font-size: 34px;
+    font-weight: 700;
+    padding-left: 60px;
+    color: #283593;
+}
+
+.box-home .linha{
+    width: 400px;
+    height: 5px;
+    background-color: #283593;
+    margin: 15px 0;
+}
+
+.box-home p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    padding-left: 60px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.box-home span{
+    font-size: 18px;
+    padding-left: 60px;
+}
+
+section.galeria{
+    margin-top: 150px;
+    width: 100%;
+    height: 500px;
+    background-color: #5c6bc0;
+}
+
+section.galeria h2{
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+section.galeria .box-wraper{
+    text-align: center;
+}
+
+section.galeria img{
+    height: 300px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	
+	margin: 0;
+	padding: 1rem 0;
+	
+    list-style-type: none;
+    
+}
+	
+        .slick-dots li {
+			margin: 0 0.25rem;
+		}
+	
+		.slick-dots button {
+			display: block;
+			width: 1rem;
+			height: 1rem;
+			padding: 0;
+			
+			border: none;
+			border-radius: 100%;
+			background-color: #512da8;
+			
+			text-indent: -9999px;
+		}
+	
+		.slick-dots li.slick-active button {
+			background-color: #039be5;
+		}
+    
+        
+section.servicos{
+    padding-top: 50px;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(238, 238, 238);
+}
+
+section.servicos h2{
+    font-size: 38px;
+    font-weight: 400;
+    text-align: justify;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    color: #444;
+}
+
+section.servicos .box-single{
+    width: 33.3%;
+    float: left;
+    padding: 30px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px;
+    margin-top: 30px;
+}
+
+section.servicos .box-single icon svg{
+    font-size: 50px;
+    margin: 10px 0;
+    color: #3f51b5;
+}
+
+.box-single h3{
+    font-size: 28px;
+    padding: 8px 0;
+    font-weight: 400;
+    color: #3f51b5;
+}
+
+.box-single p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/**HOME FIM**/
+
+
+/**FOOTER**/
+
+    footer{
+        text-align: center;
+        width: 100%;
+        padding: 15px;
+        background-color: #283593;
+        color: white;
+        margin-top: -30px;
+    }
+
+    footer p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    footer a{
+        font-size: 18px;
+        font-weight: 400;
+        color: white;
+    }
+
+    footer svg{
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    footer.fixed{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+/**FOOTER FIM**/
+
+/**SOBRE**/
+
+    section.sobre{
+        margin: 20px 0;
+    }
+
+    section.sobre h2{
+        font-size: 30px;
+        font-weight: 400;
+        color: #3f51b5;
+    }
+
+    section.sobre .box-texto{
+        width: 50%;
+        float: left;
+    }
+
+    .box-texto p{
+        margin: 15px 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    section.sobre .box-img{
+        width: 50%;
+        float: right;
+    }
+
+    .box-img img{
+        padding-left: 30px;
+        width: 600px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    
+    .box-img span{
+        padding-left: 30px;
+    }
+
+    section.sobre .box-img-historia{
+        margin-top: 25px;
+    }
+
+    .box-img-historia img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .box-img-historia p{
+        margin: 15px 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+/**SOBRE FIM**/
+
+/**CONTATO**/
+
+    section.contato{
+        text-align: center;
+        margin-top: 40px;
+        color: #3f51b5;
+    }
+
+    section.contato form{
+        text-align: center;
+        margin-top: 20px;
+    } 
+
+    section.contato input{
+        display: inline-block;
+        width: 650px;
+        height: 45px;
+        background-color: rgb(255, 254, 254);
+        border: 1px solid #333333;
+        padding: 1%;
+        margin: 10px 0;
+    }
+    
+    section.contato input[type=submit]{
+        width: 200px;
+        height: 40px;
+        background-color: #039be5;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 0;
+        border: 0;
+    }
+
+/**CONTATO FIM**/
+
+@media screen  and (max-width: 1024px){
+
+    section.servicos{
+        padding-top: 50px;
+        width: 100%;
+        height: 1300px;
+        background-color: rgb(238, 238, 238);
+    }
+
+    section.servicos .box-single{
+        width: 50%;
+        float: left;
+        padding: 30px;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px;
+        margin-top: 30px;
+    }
+    
+
+}
+
+@media screen  and (max-width: 768px){
+
+    nav.desktop{
+        display: none;
+    }
+
+    nav.mobile{
+        display: block;
+    }
+
+    section.bg-home{
+        text-align: center;
+    }
+
+    section.bg-home .box-home{
+        width: 90%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        top: 150px;
+        left: 0;
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+}
+
+    section.servicos{
+        padding-top: 50px;
+        width: 100%;
+        height: 1450px;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    section.servicos .box-single{
+        width: 50%;
+        float: left;
+        padding: 30px;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px;
+        margin-top: 30px;
+    }
+    
+
+}
+
+@media screen  and (max-width: 658px){
+
+    section.servicos{
+        padding-top: 20px;
+        width: 100%;
+        height: 2300px;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    section.servicos .box-single{
+        width: 100%;
+        float: left;
+        padding: 30px;
+        border: 1px solid black;
+        box-shadow: 2px 2px 2px;
+        margin-top: 30px;
+    }
+    
+
+}
